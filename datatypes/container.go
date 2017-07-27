@@ -1263,6 +1263,9 @@ type Container_Hardware_Pool_Details_Router struct {
 type Container_Hardware_Server_Configuration struct {
 	Entity
 
+	// The token of a requesting service. Do not set.
+	ServiceToken *string `json:"serviceToken,omitempty" xmlrpc:"serviceToken,omitempty"`
+
 	// A flag indicating that the server will be moved into the spare pool after an Operating system reload.
 	AddToSparePoolAfterOsReload *int `json:"addToSparePoolAfterOsReload,omitempty" xmlrpc:"addToSparePoolAfterOsReload,omitempty"`
 
